@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background: linear-gradient(#833ab4,#fd1d1d,#fcb045);
+    color: white;
+   
+    width: 100%;
+}
+.menu{
+    text-align: right;
+
+}
+ul li{
+    display: inline-block;
+    margin: 20px;
+    list-style: none;
+    cursor: pointer;
+   
+}
+span{
+    margin: 0 20px;
+    font-size: 28px;
+    cursor: pointer;
+    display: block;
+    display: none;
+}
+h3.job{
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+.job2{
+
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 35px;
+    background: linear-gradient(90deg,red,orange,green);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 50px;
+}
+
+
+body{
+    background: rgb(219, 209, 209);
+    overflow-x: hidden;
+}
+.title{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 60px;
+    font-size: 60px;
+    background: linear-gradient(45deg ,red,green,yellow,orange,);
+    animation: loading 1.5s infinite;
+}
+@keyframes loading{
+    0%{
+        background-position:200% ;
+    }
+    100%{
+        background-position: -200%;
+    }
+}
+ a i{
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+}
+
+.heading{
+    position: relative;
+}
+.InputContainer{
+    position: absolute;
+}
+#input{
+    margin-top: 350px;
+    margin-left: 80px;
+    width:300px;
+    height: 40px;
+    border-top: none;
+    border-left: none;
+    border-right:none ;
+    border-bottom: none;
+    border-radius: 30px;
+    border-color: gray;
+}
+.contact{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.abhi{
+    width: 500px;
+    height: 580px;
+   margin-left: 800px;
+    margin-top: -30px;
+    filter: drop-shadow(0 0 20px grey);
+    flex-wrap: wrap;
+    position: relative;
+}
+.allline{
+    position: relative;
+}
+/* .lines{
+    width: 450px;
+    height: 5px;
+    border: solid 2px black;
+    background: #fd1d1d;
+    position: relative;
+    rotate: -50deg;
+    margin-top: -220px;
+    margin-left: 850px;
+
+} */
+/* .lines1{
+    width: 450px;
+    height: 5px;
+    border: solid 2px black;
+    background: #fd1d1d;
+    position: absolute;
+    rotate: -50deg;
+    margin-top: -200px;
+    margin-left: 870px;
+} */
+/* .lines3{
+    width: 450px;
+    height: 5px;
+    border: solid 2px black;
+    background: #fd1d1d;
+    position: absolute;
+    rotate: -50deg;
+    margin-top: -200px;
+    margin-left: 910px;
+}
+.lines4{
+    width: 450px;
+    height: 5px;
+    border: solid 2px black;
+    background: #fd1d1d;
+    position: absolute;
+    rotate: -50deg;
+    margin-top: -200px;
+    margin-left: 945px;
+}
+.lines5{
+
+    width: 450px;
+    height: 5px;
+    border: solid 2px black;
+    background: #fd1d1d;
+    position: absolute;
+    rotate: -50deg;
+    margin-top: -200px;
+    margin-left: 980px;
+}
+.lines6{
+    width: 450px;
+    height: 5px;
+    border: solid 2px black;
+    background: #fd1d1d;
+    position: absolute;
+    rotate: -50deg;
+    margin-top: -200px;
+    margin-left: 1010px;
+
+} */
+
+.input2{
+     width: 100px;
+    height: 42px;
+ cursor: pointer; 
+ margin-left: -4px;
+ color: white;
+ font-size: 15px;
+ 
+position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: rgb(0 107 179);
+  border-radius: 9999px;
+
+
+}
+
+
+.link{
+    position: relative;
+}
+.ri-whatsapp-line{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin-top: -120px;
+    margin-left: 50px;
+    
+}
+.facebook{
+    width: 80px;
+    height: 80px;
+    margin-left: 50px;
+}
+.explore{
+    text-align: center;
+}
+.container2{
+    width: 200px;
+    height: 120px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: white;
+    position: relative;
+}
+.container3{
+    width: 200px;
+    height: 120px;
+    background-color: white;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.link5{
+    text-decoration: none;
+    color: black;
+}
+
+.cuntomer{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.container4{
+    width: 200px;
+    height: 120px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: white;
+    position: relative;
+}
+.container5{
+    width: 200px;
+    height: 120px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: white;
+    position: relative;
+}
+.container i{
+    font-size: 40px;
+}
+.container{
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    position: relative;
+
+}
+.logo{
+    display: flex;
+    margin-left: 10px;
+    padding: 20px;
+}
+.link{
+    padding: 20px;
+}
+.twiter{
+    margin-top: -20px;
+}
+h3{
+    position: absolute;
+    margin-top: -20px;
+}
+.foter{
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(#033747, #012733);
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+}
+h4{
+    padding: 10px;
+    color: white;
+}
+.second{
+    margin-left: 300px;
+    flex-wrap: wrap-reverse;
+}
+.last {
+    margin-left: 230px;
+    text-decoration: none;
+}
+a i{
+    text-decoration: none;
+
+    width: 100px;
+    height: 100px;
+    color: white;
+    text-decoration: none;
+}
+
+.instagram{
+    color: white;
+    margin-left: 25px;
+    margin-top: -25px;
+
+}
+i{
+    text-decoration: none;
+}
+h4{
+    color: white;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+@media  (max-width:600px){
+   span{
+    display: block;
+   }
+   ul li{
+    display: block;
+   }
+
+   ul{
+    display: none;
+   }
+   .nav{
+    width: 370px;
+   }
+
+   .title{
+   
+    font-size: 30px;
+    margin-top: 110px;
+    margin-left: 5px;
+    
+   }
+   #input{
+    width: 130px;
+    margin-left: 10px;
+    margin-top: 280px;
+    
+   }
+   .logo{
+    flex-wrap: wrap;
+   }
+   .container2{
+    margin-bottom: 20px;
+   }
+   .container3{
+    margin-bottom: 20px;
+   }
+   .container4{
+    margin-bottom: 20px;
+   }
+   .container5{
+    margin-bottom: 20px;
+   }
+   .foter{
+    flex-wrap: wrap;
+    width: 150px;
+   }
+  .second{
+    margin-left: 180px;
+    background: linear-gradient(#033747, #012733);
+     margin-top: -240px;
+    width: 300px;
+    height: 200px;
+    font-size: 10px;
+    
+
+  }
+  .last{
+ 
+    margin-left: 2px;
+    margin-top: 10px;
+    background: linear-gradient(#033747, #012733);
+    flex-wrap: wrap;
+    width: 250px;
+
+
+ 
+  width: 200px;
+  }
+  .abhi{
+    margin-left: 155px;
+  
+    margin-top: 10px;
+
+    width: 250px;
+    height: 250px;
+  }
+  .explore{
+    font-size: 20px;
+    margin-top: 70px;
+  }
+  .lines{
+    margin-left: 250px;
+  }
+  .lines0{
+    margin-left: 250px;
+  }
+  .job2{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  body{
+    overflow-x: hidden;
+  }
+}
+
+   
+     
+    </style>
+
+</head>
+
+<body>
+    <div class="nav">
+        <div class="menu">
+            <span onclick="toggle()">&#9776;</span>
+            <!-- <h3 class="job">JOB PORTAL  </h3> -->
+
+            <ul id="menu-toggle">
+                <h3 class="job">JOB PORTAL </h3>
+                <!-- <p class="get">get your dream job</p> -->
+                <li> HOME</li>
+                <li> CONTACT</li>
+                <li>ABOUT</li>
+                <!-- <li>SERVICES</li> -->
+                <li class="login">LOGIN</li>
+                <li class="register">REGISTER</li>
+            </ul>
+        </div>
+
+    </div>
+        <div>
+            <h1 class="job2"> Dream jobs</h1>
+        </div>
+    <div class="body">
+        <div class="heading">
+         <h1 class="title" onmouseenter="enter()" onmouseleave="leave()">find the <br> most exciting <br>startup jobs</h1>
+        </div>
+        <div class="InputContainer">
+            <input placeholder="Search job here.." id="input"  name="text" type="text" autocomplete="off">
+            <button class="input2" onclick="cal()">find jobs</button><br>
+          <div class="lines0"></div>
+            <div class="lines">
+
+            </div>
+            <div class="lines1">
+
+            </div>
+
+            <div class="lines3">
+
+            </div>
+
+            <div class="lines4">
+
+            </div>
+
+            <div class="lines5">
+
+            </div>
+
+            <div class="lines6">
+
+            </div>
+
+            <div class="lines7">
+
+            </div>
+          
+        </div >
+        <div>
+
+            <img src="abhishek.png" alt="" class="abhi">
+           
+            
+        </div>
+    </div>
+
+
+    <h1 class="explore">Explore By Category</h1>
+    <div class="container">
+        
+        <div class="container2" onclick="job()">
+            <i class="ri-discuss-fill"></i>
+            <!-- <img src="message.png.png" alt="" width="50px" height="50px"> -->
+            <p class="cuntomer" o>Marketing <br>  123 Vacancy</p>
+     
+        </div>
+
+        <div class="container3" onclick="job()">
+            <i class="ri-customer-service-2-fill fa-5x" ></i>
+            <!-- <img src="https://p1.hiclipart.com/preview/849/802/423/circle-silhouette-person-human-user-symbol-blackandwhite-logo-cap-png-clipart.jpg" alt="" width="50px" height="50px"> -->
+            <p class="cuntomer" > customer Services <br>  123 Vacancy </p>
+        </div>
+
+        <div class="container4" onclick="job()">
+            <i class="ri-compasses-2-fill" o></i>
+            <p class="cuntomer" >Design & Creative  <br>  123 Vacancy </p>
+        </div>
+
+        <div class="container5" onclick="job()">
+            <i class="ri-presentation-line"></i>
+            <p class="cuntomer" >Teaching & Education <br>  123 Vacancy</p>
+        </div>
+    </div>
+
+    <div class="logo">
+        <h3>Contact / message </h3>
+      <div class="link">
+     
+        <a href=" https://wa.me/918431345373"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png" alt="" width="60px" height="60px">
+    </div>
+ 
+   <div class="link">
+        <a href="https://www.facebook.com/kiccha.abhi.7315?mibextid=gjUFcU"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" alt="" width="50px" height="50px">
+        </a>
+    </div>
+
+    <div class="link">
+        <a href=" https://x.com/Abhi60680958?t=OgrM5Pi4QaPiLaj0EaS6EA&s=08"> <img src="twiter.png" alt="" width="90px" height="90px" class="twiter">
+        </a>
+    </div>
+
+    <div class="link">
+        <a href=" https://instagram.com/abhishek_chintpalli?utm_source=qr&igshid=OGIxMTE0OTdkZA=="> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="" width="50px" height="50px">
+        </a>
+    </div>
+</div>
+
+<div class="foter">
+    <div class="h1">
+        <h1> company</h1>
+        <h4> about</h4>
+        <h4>Contact us</h4>
+        <h4> privacy & policy</h4>
+        <h4>Terms & Condition</h4>
+    </div>
+
+    <div class="second">
+        <h1>Quick Links</h1>
+        <h4 class="Location"> <a href="https://maps.app.goo.gl/bPqL7jKa5emvxuz48"> Location</a></h4>
+        <h4>Contact us</h4>
+        <h4> Privacy & Policy</h4>
+        <h4>Terms % Condition</h4>
+    </div>
+
+    <div class="last">
+        <h1>Contact</h1>
+        <h4> <a href=" https://instagram.com/abhishek_chintpalli?utm_source=qr&igshid=OGIxMTE0OTdkZA=="><i class="ri-instagram-fill"></i> <p class="instagram"> Instagram</p></a></h4>
+        <h4>   <a href=" https://wa.me/918431345373"> <i class="ri-whatsapp-fill"></i><p class="instagram"> Whatsapp </p> </a></h4>
+        <h4><a href="https://www.facebook.com/kiccha.abhi.7315?mibextid=gjUFcU"> <i class="ri-facebook-circle-fill"></i> <p class="instagram"> Facebook </p> </a></h4>
+        <h4>    <a href=" https://x.com/Abhi60680958?t=OgrM5Pi4QaPiLaj0EaS6EA&s=08"><i class="ri-twitter-fill"></i><p class="instagram"> Twitter</p></a></h4>
+    </div>
+</div>
+</body>
+<script>
+    function cal() {
+    alert("sorry job is not available")
+}
+function toggle() {
+    var a = document.getElementById("menu-toggle");
+
+    if (a.style.display == "block") {
+        a.style.display = "none";
+    } else {
+        a.style.display = "block";
+    }
+}
+function job(){
+    alert("Call this number and get a job 8431345373")
+}
+
+</script>
+
+</html>
